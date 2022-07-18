@@ -173,7 +173,7 @@ import random
 
 
 def main():
-    f = open(r'findme.txt', 'r')
+    f = open(r'C:\Users\gaby2\Desktop\PYTHON LEARNING\human game\human game missions\findme.txt', 'r')
     secret_word = choose_word(f, random.randint(0, 50))
     old_letters_guessed = []
     num_of_tries = 1
