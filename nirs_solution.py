@@ -65,6 +65,7 @@ x-------x
 HANGMAN_PHOTOS = [PICTURE_1, PICTURE_2, PICTURE_3, PICTURE_4, PICTURE_5, PICTURE_6, PICTURE_7]
 MAX_MISTAKES = 7
 MAX_MISTAKES_MESSAGE = f"max mistakes: {MAX_MISTAKES}"
+SECRET_LETTER_SYMBOL = "_"
 
 
 def check_win(secret_word, guessed_letters):
@@ -86,7 +87,7 @@ def get_hidden_word(secret_word, letters_guessed):
     """
     guessed_word = ""
     for letter in secret_word:
-        guessed_word += letter if letter in letters_guessed else '_'
+        guessed_word += letter if letter in letters_guessed else SECRET_LETTER_SYMBOL
     return guessed_word
 
 
